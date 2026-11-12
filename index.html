@@ -4,53 +4,86 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DareChain: Pass the dare</title>
-<meta name="description" content="DareChain is a short video dare app. Film a 10-second dare, add a twist, and pass it to your friends.">
-<style>
-  :root { --bg:#0b0b0f; --card:#17171f; --border:#2a2a36; --text:#f2f2f3; --muted:#b0b0b6; --orange:#ff5722; --blue:#3d8bff; color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; }
-  main { max-width:760px; margin:0 auto; padding:48px 20px 24px; }
-  .logo { display:block; margin:0 auto 12px; }
-  h1 { font-size:2.6rem; text-align:center; margin:0; letter-spacing:-0.5px; }
-  .tag { text-align:center; color:var(--orange); font-size:1.3rem; font-weight:700; margin:4px 0 28px; }
-  .lead { text-align:center; color:var(--muted); font-size:1.1rem; max-width:560px; margin:0 auto 36px; }
-  .steps { display:grid; gap:14px; margin:0 0 36px; }
-  .step { display:flex; gap:16px; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:16px 18px; }
-  .num { flex:0 0 34px; height:34px; border-radius:50%; background:var(--orange); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; }
-  .step strong { display:block; }
-  .step span { color:var(--muted); font-size:0.95rem; }
-  .soon { text-align:center; margin:0 0 12px; }
-  .soon span { display:inline-block; border:1px solid var(--blue); color:var(--blue); border-radius:999px; padding:8px 18px; font-weight:700; }
-  .note { text-align:center; color:var(--muted); font-size:0.9rem; margin:0 0 8px; }
-  footer { max-width:760px; margin:0 auto; padding:24px 20px 48px; text-align:center; color:var(--muted); font-size:0.9rem; border-top:1px solid var(--border); }
-  footer a { color:var(--blue); text-decoration:none; margin:0 10px; }
-</style>
+<meta name="description" content="DareChain is a short video dare game. Film a 10-second dare, add your twist, and pass it to your friends.">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DareChain: Pass the dare">
+<meta property="og:description" content="DareChain is a short video dare game. Film a 10-second dare, add your twist, and pass it to your friends.">
+<meta property="og:image" content="https://rocksi17.github.io/darechain-site/og-image.png">
+<meta property="og:url" content="https://rocksi17.github.io/darechain-site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./"><svg width="38" height="23" viewBox="0 20 100 60" aria-hidden="true"><defs><clipPath id="lo"><rect x="38" y="50" width="24" height="16"/></clipPath></defs><rect x="18.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#ff5722" stroke-width="7.5"/><rect x="44.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#3d8bff" stroke-width="7.5"/><g clip-path="url(#lo)"><rect x="18.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#ff5722" stroke-width="7.5"/></g></svg><span>DareChain</span></a>
+  <nav class="nav-links"><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a></nav>
+</div></header>
 <main>
-  <svg class="logo" width="120" height="72" viewBox="0 20 100 60" role="img" aria-label="DareChain logo">
-    <defs><clipPath id="low"><rect x="38" y="50" width="24" height="16"/></clipPath></defs>
-    <rect x="18.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#ff5722" stroke-width="7.5"/>
-    <rect x="44.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#3d8bff" stroke-width="7.5"/>
-    <g clip-path="url(#low)"><rect x="18.75" y="40.75" width="36.5" height="18.5" rx="9.25" fill="none" stroke="#ff5722" stroke-width="7.5"/></g>
-  </svg>
-  <h1>DareChain</h1>
-  <p class="tag">Pass the dare.</p>
-  <p class="lead">Film a 10-second dare, add your own twist, and pass it to your friends. Watch your chain grow, collect points, and climb the levels.</p>
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Film it. Twist it. <span>Pass the dare.</span></h1>
+    <p class="lead">DareChain is the short video dare game for friends. Do a 10-second dare, add your own twist, and pass it on. Watch your chain grow.</p>
+    <span class="pill">Coming soon on the App Store</span>
+    <p class="small">For ages 13 and over. Please keep dares safe.</p>
+  </div>
+  <div class="phone" aria-hidden="true"><div class="screen">
+    <div class="m-top"><div class="m-av">&#128293;</div><div><div class="m-name">Hey @you</div><div class="m-sub">Ready to dare?</div></div></div>
+    <div class="m-bar"><b>Lv 2</b><div class="m-track"><i></i></div><span>30/50</span><span>&#128293; 3</span></div>
+    <div class="m-chips"><span class="m-chip on">Today</span><span class="m-chip">All</span><span class="m-chip">Funny</span><span class="m-chip">Hard</span></div>
+    <div class="m-card"><div class="m-tag">TODAY&#39;S DARE</div><div class="m-dare">Show how you wake up on Monday, then on Friday.</div></div>
+    <div class="m-btn">Accept the dare</div>
+  </div></div>
+</div></section>
 
+<section class="section alt"><div class="wrap">
+  <p class="eyebrow">HOW IT WORKS</p>
+  <h2>Three steps. Ten seconds.</h2>
+  <p class="sub">No editing, no filters. Just you, a dare and your friends.</p>
   <div class="steps">
-    <div class="step"><div class="num">1</div><div><strong>Film a 10-second dare</strong><span>Get a random dare, or take the dare of the day that everyone shares.</span></div></div>
+    <div class="step"><div class="num">1</div><div><strong>Get a dare and film it</strong><span>Take a random dare, or the dare of the day that everyone shares.</span></div></div>
     <div class="step"><div class="num">2</div><div><strong>Add your twist</strong><span>Make it harder, funnier or weirder for the next person.</span></div></div>
     <div class="step"><div class="num">3</div><div><strong>Pass it on</strong><span>Send it to friends, share your video, and watch your chain spread.</span></div></div>
   </div>
+</div></section>
 
-  <p class="soon"><span>Coming soon on the App Store</span></p>
-  <p class="note">DareChain is for ages 13 and over. Please keep dares safe.</p>
+<section class="section"><div class="wrap">
+  <p class="eyebrow">FEATURES</p>
+  <h2>Made for sharing</h2>
+  <p class="sub">Everything you need to dare your friends again and again.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">&#127919;</div><h3>Dare of the day</h3><p>Everyone gets the same dare each day. Do it, share it, and see who nails it.</p></div>
+    <div class="card"><div class="ic">&#128279;</div><h3>Chains</h3><p>Every friend adds a link with their own twist. Watch the whole chain from start to finish.</p></div>
+    <div class="card"><div class="ic">&#127942;</div><h3>Levels and streaks</h3><p>Earn points when you send a dare or when someone continues your chain. Climb from Newbie to Legend.</p></div>
+    <div class="card"><div class="ic">&#128293;</div><h3>Reactions</h3><p>React with fire, laughs, wows and claps, and see who reacted to your videos.</p></div>
+    <div class="card"><div class="ic">&#128101;</div><h3>Friends</h3><p>Find friends by username, send dares straight to their inbox, or share your video anywhere.</p></div>
+    <div class="card"><div class="ic">&#128737;&#65039;</div><h3>Safe by design</h3><p>Report any video, block anyone, and delete your account any time, right inside the app.</p></div>
+  </div>
+</div></section>
+
+<section class="section alt"><div class="wrap">
+  <p class="eyebrow">SAFETY</p>
+  <h2>Fun first. Safety always.</h2>
+  <p class="sub">We built DareChain so dares stay fun and nobody gets hurt or bullied.</p>
+  <ul class="safety">
+    <li><b>Dares are kept safe.</b> No dangerous stunts, nothing that could hurt anyone.</li>
+    <li><b>Report and block.</b> One tap on any video. Videos reported by several players are hidden until we review them.</li>
+    <li><b>You are in control.</b> No real name needed. Delete your account and your videos any time in Settings.</li>
+    <li><b>Ages 13 and over.</b> Younger players are not allowed.</li>
+  </ul>
+</div></section>
+
+<section class="section cta"><div class="wrap">
+  <h2>Ready to pass the dare?</h2>
+  <p class="sub">DareChain is coming soon to the App Store.</p>
+  <span class="pill">Coming soon on the App Store</span>
+</div></section>
 </main>
-<footer>
-  <a href="privacy/">Privacy policy</a>
-  <a href="support/">Support</a>
-  <p>&copy; 2026 DareChain</p>
-</footer>
+<footer class="footer"><div class="wrap">
+  <div><a href="privacy/">Privacy policy</a><a href="terms/">Terms of use</a><a href="support/">Support</a><a href="mailto:rocksirosario@gmail.com">rocksirosario@gmail.com</a></div>
+  <div>&copy; 2026 DareChain. For ages 13 and over.</div>
+</div></footer>
 </body>
 </html>
